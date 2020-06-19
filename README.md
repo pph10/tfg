@@ -1,2 +1,2 @@
 # tfg
-Trabajo final de ontologias
+Trabajo final de grado sobre ontologias

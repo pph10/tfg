@@ -1,0 +1,1305 @@
+@prefix : <http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl> .
+
+<http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl> rdf:type owl:Ontology ;
+                                                                                  owl:imports <http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl> ;
+                                                                                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Autor> "Patricia Poveda Hernández" ;
+                                                                                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Año> 2020 ;
+                                                                                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Descripción> "Desarrollo de una ontología para entender y controlar la información que forma parte de un sistema de transporte encargado de la recogida de materiales metálicos, obtenidos del cliente por parte del proveedor para su posterior reutilización."@es ;
+                                                                                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Titulo> "Logística inversa en Control de flotas" ;
+                                                                                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Tutor> "Joaquín Ordieres Meré" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#coversRequirements> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasAuthor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasConsequences> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#hasIntent> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#relatedCPs> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios
+<http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+rdfs:isDefinedBy rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Autor
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Autor> rdf:type owl:AnnotationProperty ;
+                                                                                            rdfs:subPropertyOf rdfs:label .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Año
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Año> rdf:type owl:AnnotationProperty ;
+                                                                                          rdfs:subPropertyOf rdfs:label .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Descripción
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Descripción> rdf:type owl:AnnotationProperty ;
+                                                                                                  rdfs:subPropertyOf rdfs:label .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Titulo
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Titulo> rdf:type owl:AnnotationProperty ;
+                                                                                             rdfs:subPropertyOf rdfs:label .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Tutor
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Tutor> rdf:type owl:AnnotationProperty ;
+                                                                                            rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> rdf:type owl:ObjectProperty ,
+                                                                               owl:TransitiveProperty ;
+                                                                      rdfs:comment """A generic, relative localization, holding between any entities. E.g. 'Rome is the seat of the Pope', 'the liver is the location of the tumor'.
+As a very general notion of localization, it is assumed as transitive.
+For 'absolute' locations, see SpaceRegion""" ;
+                                                                      rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/place.owl> ;
+                                                                      rdfs:label "is location of"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/place.owl#is_located_in
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#is_located_in> rdf:type owl:ObjectProperty ,
+                                                                                owl:TransitiveProperty ;
+                                                                       rdfs:comment """A generic, relative localization, holding between any entities. E.g. 'the cat is on the mat', 'Omar is in Samarcanda', 'the wound is close to the femural artery'.
+For 'absolute' locations, see SpaceRegion""" ;
+                                                                       rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/place.owl> ;
+                                                                       rdfs:label "is located in"@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#are_divided_by
+:are_divided_by rdf:type owl:ObjectProperty ;
+                owl:inverseOf :divide ;
+                rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments> ;
+                rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#are_opened_hours
+:are_opened_hours rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :has_opening_hours ;
+                  rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                  rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#divide
+:divide rdf:type owl:ObjectProperty ;
+        rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+        rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#form
+:form rdf:type owl:ObjectProperty ;
+      owl:inverseOf :is_formed_by ;
+      rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments> ;
+      rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#gives_first_weight
+:gives_first_weight rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :is_first_weight_given_by ;
+                    rdfs:domain :Cust.Weighing_Worker ;
+                    rdfs:range :Customer_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#gives_second_weight
+:gives_second_weight rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :is_second_weight_given_by ;
+                     rdfs:domain :Sup.Weighing_Worker ;
+                     rdfs:range :Warehouse_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#happen_in
+:happen_in rdf:type owl:ObjectProperty ;
+           owl:inverseOf :has ;
+           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+           rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+     rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_as_destination
+:has_as_destination rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :is_destination_of ;
+                    rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                    rdfs:range :Product_Warehouse .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_end_point_in
+:has_end_point_in rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :is_ended_point_of ;
+                  rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                  rdfs:range :Vehicle_Garage ;
+                  rdfs:label "has end point in" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_opening_hours
+:has_opening_hours rdf:type owl:ObjectProperty ;
+                   rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> ;
+                   rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_order_and_expiration_date
+:has_order_and_expiration_date rdf:type owl:ObjectProperty ;
+                               owl:inverseOf <http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_order/expiration_date_of> ;
+                               rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                               rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_start_point_in
+:has_start_point_in rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :is_started_point_of ;
+                    rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                    rdfs:range :Vehicle_Garage ;
+                    rdfs:label "has start point in" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_time_slot
+:has_time_slot rdf:type owl:ObjectProperty ;
+               owl:inverseOf :is_time_slot ;
+               rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+               rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#has_working_hours
+:has_working_hours rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :is_working_shcedule_of ;
+                   rdfs:domain :Supplier ;
+                   rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#includes
+:includes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_included ;
+          rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+          rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+          rdfs:label "includes" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_destination_of
+:is_destination_of rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Product_Warehouse ;
+                   rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_duration__of
+:is_duration__of rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :last ;
+                 rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                 rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_ended_point_of
+:is_ended_point_of rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Vehicle_Garage ;
+                   rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                   rdfs:label "is end point of" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_first_weight_given_by
+:is_first_weight_given_by rdf:type owl:ObjectProperty ;
+                          rdfs:domain :Customer_Scale ;
+                          rdfs:range :Cust.Weighing_Worker .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_formed_by
+:is_formed_by rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+              rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_in_position
+:is_in_position rdf:type owl:ObjectProperty ;
+                owl:inverseOf :is_position_of ;
+                rdfs:domain :Download ,
+                            <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents> ,
+                            <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ,
+                            <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                rdfs:range :Real_Time_Location .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_in_stage
+:is_in_stage rdf:type owl:ObjectProperty ;
+             owl:inverseOf :is_stage_of ;
+             rdf:type owl:SymmetricProperty ;
+             rdfs:domain :Supplier ,
+                         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+             rdfs:range :Activities .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_included
+:is_included rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+             rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+             rdfs:label "is included in" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_parked_in
+:is_parked_in rdf:type owl:ObjectProperty ;
+              owl:inverseOf :is_the_park_of ;
+              rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+              rdfs:range :Vehicle_Garage ;
+              rdfs:label "is parked in" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_position_of
+:is_position_of rdf:type owl:ObjectProperty ;
+                rdfs:domain :Real_Time_Location ;
+                rdfs:range :Download ,
+                           <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents> ,
+                           <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ,
+                           <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_second_weight_given_by
+:is_second_weight_given_by rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Warehouse_Scale ;
+                           rdfs:range :Sup.Weighing_Worker .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_stage_of
+:is_stage_of rdf:type owl:ObjectProperty ;
+             rdfs:domain :Activities ;
+             rdfs:range :Supplier ,
+                        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_started_point_of
+:is_started_point_of rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Vehicle_Garage ;
+                     rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                     rdfs:label "is starting point of" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_the_park_of
+:is_the_park_of rdf:type owl:ObjectProperty ;
+                rdfs:domain :Vehicle_Garage ;
+                rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                rdfs:label "is the parking of" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_time_slot
+:is_time_slot rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+              rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_weighed_in
+:is_weighed_in rdf:type owl:ObjectProperty ;
+               owl:inverseOf :weighs ;
+               rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+               rdfs:range :Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_working_shcedule_of
+:is_working_shcedule_of rdf:type owl:ObjectProperty ;
+                        rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                        rdfs:range :Supplier .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_workplace_of
+:is_workplace_of rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :work_in ;
+                 rdfs:domain :Load_Area ,
+                             :Sup.Manager ,
+                             :Weighing_Area ,
+                             <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area> ,
+                             <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> ;
+                 rdfs:range :Cust.Manager ,
+                            :Cust.Weighing_Worker ,
+                            :Porters ,
+                            :Sup.Manager ,
+                            :Sup.Weighing_Worker .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#last
+:last rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+      rdfs:range <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#weighs
+:weighs rdf:type owl:ObjectProperty ;
+        rdfs:domain :Scale ;
+        rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#work_in
+:work_in rdf:type owl:ObjectProperty ;
+         rdfs:domain :Cust.Manager ,
+                     :Cust.Weighing_Worker ,
+                     :Porters ,
+                     :Sup.Manager ,
+                     :Sup.Weighing_Worker ;
+         rdfs:range :Load_Area ,
+                    :Weighing_Area ,
+                    <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area> ,
+                    <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_order/expiration_date_of
+<http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#is_order/expiration_date_of> rdf:type owl:ObjectProperty ;
+                                                                                                             rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                                             rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Belongs_to
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Belongs_to> rdf:type owl:ObjectProperty ;
+                                                                                                 owl:inverseOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Owns> ;
+                                                                                                 rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                                 rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                                                                                                 rdfs:label "Belongs to" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driven_by
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driven_by> rdf:type owl:ObjectProperty ;
+                                                                                                   owl:inverseOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driver_of> ;
+                                                                                                   rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                   rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Driver> ;
+                                                                                                   rdfs:label "is driven by" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driver_of
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driver_of> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Driver> ;
+                                                                                                   rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                   rdfs:label "is driver of" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_route_of
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_route_of> rdf:type owl:ObjectProperty ;
+                                                                                                  owl:inverseOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Its_route_is> ;
+                                                                                                  rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                                                                                                  rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                  rdfs:label "is route of" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_stored_by
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_stored_by> rdf:type owl:ObjectProperty ;
+                                                                                                   owl:inverseOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Store> ;
+                                                                                                   rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                                   rdfs:range :Product_Warehouse ;
+                                                                                                   rdfs:label "is stored by" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_transported_by
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_transported_by> rdf:type owl:ObjectProperty ;
+                                                                                                        owl:inverseOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Transport> ;
+                                                                                                        rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                                        rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                        rdfs:label "is transported by" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Its_route_is
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Its_route_is> rdf:type owl:ObjectProperty ;
+                                                                                                   rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                   rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                                                                                                   rdfs:label "its route is" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Owns
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Owns> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                                                                                           rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                           rdfs:label "owns" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Store
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Store> rdf:type owl:ObjectProperty ;
+                                                                                            rdfs:domain :Product_Warehouse ;
+                                                                                            rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                            rdfs:label "stores" .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Transport
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Transport> rdf:type owl:ObjectProperty ;
+                                                                                                rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                rdfs:range <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                                rdfs:label "transports" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                rdfs:range xsd:string ;
+                                                                                rdfs:comment "A datatype property that encodes values from xsd:date (or any other date-related xsd datatype) for a TimeInterval; a same TimeInterval can have more than one date value: begin date, end date, date at which the interval holds, as well as dates expressed in different formats: xsd:gYear, xsd:dateTime, etc." ;
+                                                                                rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> ;
+                                                                                rdfs:label "has interval date"@en ,
+                                                                                           "intervallo ha data"@it .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> ;
+                                                                                   rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                   rdfs:comment "The end date of a time interval." ;
+                                                                                   rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> ;
+                                                                                   rdfs:label "interval has end date"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalDate> ;
+                                                                                     rdfs:domain <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+                                                                                     rdfs:comment "The start date of a time interval." ;
+                                                                                     rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> ;
+                                                                                     rdfs:label "interval has start date"@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#End_Point
+:End_Point rdf:type owl:DatatypeProperty ;
+           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Geographical point where the route ends, normally the vehicule garage where the vehicule was parked at the beginning."@en ,
+                        """Punto geográfico en el que termina la ruta, normalmente el garaje desde donde ha salido el vehiculo.
+La rutas generalmente son cerradas"""@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#ID_Download
+:ID_Download rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+             rdfs:domain :Download ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#ID_Trajectory
+:ID_Trajectory rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+               rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Nature_of_material
+:Nature_of_material rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Naturaleza del material. Para diferenciar entre tipos de metales."@es ,
+                                 "Nature of the material. To classify between different types of metals."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Occupation_Level
+:Occupation_Level rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Areas ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Quality_Level_of_Material
+:Quality_Level_of_Material rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Calidad del material segun la cual los materiales tendrán un valor u otro."@es ,
+                                        "Quality of the material, according to it, the materials will have more or less value."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Start_Point
+:Start_Point rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Geographical point where the route begins, generally the vehicle garage."@en ,
+                          "Punto geográfico en el que comienza una ruta, desde donde salen los camiones (los garajes)"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Customer
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Customer> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Location> ;
+                                                                                                      rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                                                                                                      rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Warehouse
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Warehouse> rdf:type owl:DatatypeProperty ;
+                                                                                                       rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Location> ;
+                                                                                                       rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> ;
+                                                                                                       rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capac_Vehicle
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capac_Vehicle> rdf:type owl:DatatypeProperty ;
+                                                                                                    rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capacity> ;
+                                                                                                    rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                    rdfs:range xsd:float .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capac_Warehouse
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capac_Warehouse> rdf:type owl:DatatypeProperty ;
+                                                                                                      rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capacity> ;
+                                                                                                      rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> ;
+                                                                                                      rdfs:range xsd:float .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capacity
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capacity> rdf:type owl:DatatypeProperty ;
+                                                                                               rdfs:range xsd:float ;
+                                                                                               rdfs:comment "It registers the capacity of different elements, such as vehicles, warehouses, or the occupation level of warehouse scales, to see if they can continue taking over more material or they are fulfilled."@en ,
+                                                                                                            "Recoge la capacidad de los distintos elementos, como los vehiculos, almacenes, o la ocupación de básculas de los almacenes, para saber si pueden seguir haciendose cargo de más material."@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Dimension
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Dimension> rdf:type owl:DatatypeProperty ;
+                                                                                                rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Parameters> ;
+                                                                                                rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ,
+                                                                                                            <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Experience
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Experience> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:domain :Supplier ;
+                                                                                                 rdfs:range xsd:string ;
+                                                                                                 rdfs:comment "It represents the experience level of the people involved on the process. The assignment of the tasks and routes will depend on it"@en ,
+                                                                                                              "Recoge el nivel de experiencia de las personas que particpan en el proceso. De ello dependerá la asignación de unos encargos u otros"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Fuel
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Fuel> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                           rdfs:range xsd:float ;
+                                                                                           rdfs:comment "It collects the fuel level of the vehicles, in order to know if it is necessary for the trucks to get out of the route and refuel."@en ,
+                                                                                                        "Recoge el nivel de combustible de los vehiculos para saber si es necesario que se desvien a repostar."@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Customer
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Customer> rdf:type owl:DatatypeProperty ;
+                                                                                                  rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+                                                                                                  rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                                                                                                  rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Product
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Product> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+                                                                                                 rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+                                                                                                 rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Supplier
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Supplier> rdf:type owl:DatatypeProperty ;
+                                                                                                  rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+                                                                                                  rdfs:domain :Supplier ;
+                                                                                                  rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Vehicle
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Vehicle> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> ;
+                                                                                                 rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                                 rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:range xsd:string ;
+                                                                                                 rdfs:comment "An identification number is assigned to the different elements to be able to identify them and keep track of them in a simple way: it is applied to customers, drivers, vehicles and products."@en ,
+                                                                                                              "Se adjudica un numero de identificación a los distintos elementos para poder identificarlos y llevar un seguimiento de ellos de forma sencilla: se aplica a los clientes, conductores, vehiculos y productos."@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Load
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Load> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:subPropertyOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Parameters> ;
+                                                                                           rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ,
+                                                                                                       <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                           rdfs:range xsd:string .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Location
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Location> rdf:type owl:DatatypeProperty ;
+                                                                                               rdfs:range xsd:string ;
+                                                                                               rdfs:comment """It represents the addresses of the customers pick up points, of the departure and arrival warehouses, and the real-time positions of the vehicles and drivers in order to achieve an optimal service.
+The model is limited to a regional area with not too big distances (radius of 100 km approx)"""@en ,
+                                                                                                            """Recoge las direcciones de los puntos de recogida de los clientes, de los almacenes de partida y llegada, y las posiciones en tiempo real de los vehiculos y conductores para un servicio optimo.
+El modelo se limita a una zona regional con distancias no demasiado grandes (radio de 100 km aprox)"""@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Name
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Name> rdf:type owl:DatatypeProperty ;
+                                                                                           rdfs:domain :Supplier ,
+                                                                                                       <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                                                                                           rdfs:range xsd:string ;
+                                                                                           rdfs:comment "Se registra el nombre de los clientes y proveedores para poder idetificarlos"@es ,
+                                                                                                        "The names of customers and suppliers are registered in order to identify them properly"@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Parameters
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Parameters> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:comment "Dimensions and weights of vehicles or products"@en ,
+                                                                                                              "Medidas y peso, de los vehiculos o los productos"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Length
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Length> rdf:type owl:DatatypeProperty ;
+                                                                                                  rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                                                                                                  rdfs:range xsd:string ;
+                                                                                                  rdfs:comment "Sum of all the segments that make up a route: it has a direct influence in the duration of the route"@en ,
+                                                                                                               "Total de los segmentos que componen una ruta: influyen en el tiempo de duracion de una ruta"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Stops
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Stops> rdf:type owl:DatatypeProperty ;
+                                                                                                 rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                                                                                                 rdfs:range xsd:integer ;
+                                                                                                 rdfs:comment "Number of stops that componed a route. They have a direct effect on the duration of the route"@en ,
+                                                                                                              "Número de paradas que componen la ruta. Tendrán un efecto directo en la duración de la ruta"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#State
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#State> rdf:type owl:DatatypeProperty ;
+                                                                                            rdfs:domain :Supplier ,
+                                                                                                        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area> ,
+                                                                                                        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> ,
+                                                                                                        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> ;
+                                                                                            rdfs:range xsd:string ;
+                                                                                            rdfs:comment """Determina la situacion del objeto: Libre/Ocupado
+Se aplica a los conductores y a los vehiculos para saber si se les puede destinar a nueva ruta, y a las zonas de los almacenes para saber si el vehiculo puede entrar"""@es ,
+                                                                                                         """It determines the state of the object: Free / Busy
+It is applied to drivers and vehicles, in order to know if they can be assigned to a new route, and to warehouse areas to know if another vehicle can enter"""@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Traffic
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Traffic> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:domain <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+                                                                                              rdfs:range xsd:string ;
+                                                                                              rdfs:comment "Ayuda a determinar cuales son las rutas más apropiadas y desviarlas si hiciese falta"@es ,
+                                                                                                           "It helps to determine which are the most appropriate routes for the tasks and to divert them if necessary"@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Urgency
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Urgency> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:domain :Scheduling ;
+                                                                                              rdfs:range xsd:string ;
+                                                                                              rdfs:comment "Determinan la prioridad y el orden de los encargos"@es ,
+                                                                                                           "Determine the priority of orders"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place
+<http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> rdf:type owl:Class ;
+                                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/place.owl#isLocationOf> ;
+                                                                                     owl:someValuesFrom owl:Thing
+                                                                                   ] ;
+                                                               rdfs:comment """A location, in a very generic sense: a political geographic entity (Roma, Lesotho), a location determined by the presence of other entities ('the area close to Roma'), pivot events or signs (\"the area where the helicopter fell\"), complements of other entities ('the area under the table'), as well as physical objects conceptualized as locations as their main identity criterion ('the territory of Italy').
+In this generic sense, a Place is an 'approximate', relative location. For an 'absolute', abstract location, cf. the pattern spaceregion.owl.
+Formally, a Place is defined by the fact of having something located in it; a Place is located in itself.""" ;
+                                                               rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/place.owl> ;
+                                                               rdfs:label "Place"@en .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval
+<http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> ;
+                                                                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                                             ] ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> ;
+                                                                                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                                             ] ;
+                                                                             rdfs:comment """Any Region in a dimensional space that aims at representing time.
+It should be used when you want to talk about time as an object having some characteristics.""" ;
+                                                                             rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl> ;
+                                                                             rdfs:label "Time interval"@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Activities
+:Activities rdf:type owl:Class ;
+            rdfs:subClassOf :Logistics_Services ;
+            rdfs:comment "Distintas acciones relevantes en el proceso de logística. Se distinguirán subclases según las distintas actividades. Estas actividades se pueden utilizar para componer actividades más complejas."@es ,
+                         "Relevant actions in the logistics process. Subclasses will be distinguished according to the different activities. These activities can be used to compose more complex activities."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Areas
+:Areas rdf:type owl:Class ;
+       rdfs:subClassOf :Logistics_Resources ;
+       rdfs:comment "Dentro de los almacenes y locales de los clientes es necesario distinguir entre distintas zonas según la actividad que se realiza en ellos"@es ,
+                    "Within customers' warehouses and premises, it is necessary to make a difference between the areas according to the activity carried out in them."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Box_Crane
+:Box_Crane rdf:type owl:Class ;
+           owl:equivalentClass :Box_with_Crane ;
+           rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Box_with_Crane
+:Box_with_Crane rdf:type owl:Class ;
+                rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Box> ;
+                owl:disjointWith :Box_without_Crane .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Box_without_Crane
+:Box_without_Crane rdf:type owl:Class ;
+                   rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Box> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Break_Stop
+:Break_Stop rdf:type owl:Class ;
+            rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Cust.Manager
+:Cust.Manager rdf:type owl:Class ;
+              rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+              rdfs:comment "People in charge of leading the process from the customer' position, leading the customers team and making decisions"@en ,
+                           "Personas encargadas de dirigir el proceso referente a la parte del cliente, dirigiendo a los basculistas e indicando a los proveedores."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Cust.Weighing_Worker
+:Cust.Weighing_Worker rdf:type owl:Class ;
+                      rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> ;
+                      rdfs:comment "People that are in charge of weighing the product when the truck is going to pick it up in the customer premises, weighing the truck when entering and leaving the place to calculate the load difference."@en ,
+                                   "Personas encargadas de pesar el producto cuando el camión lo recoge, pesando el camión al entrar y al salir para calcular la diferencia de carga."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Cust_Scale_Entry
+:Cust_Scale_Entry rdf:type owl:Class ;
+                  rdfs:subClassOf :Customer_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Cust_Scale_Exit
+:Cust_Scale_Exit rdf:type owl:Class ;
+                 rdfs:subClassOf :Customer_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Customer_Scale
+:Customer_Scale rdf:type owl:Class ;
+                rdfs:subClassOf :Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Customer_Storage_Area
+:Customer_Storage_Area rdf:type owl:Class ;
+                       rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> ;
+                       owl:disjointWith :Warehouse_Storage_Area .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Customer_Weighing_Area
+:Customer_Weighing_Area rdf:type owl:Class ;
+                        rdfs:subClassOf :Weighing_Area ;
+                        owl:disjointWith :Warehouse_Weighing_Area .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Download
+:Download rdf:type owl:Class ;
+          rdfs:subClassOf :Logistics_Services ;
+          rdfs:comment "Esta clase sirve para recoger los productos que ya han completado el proceso y se encuentran en el almacén, para poder llevar un seguimiento de ellos."@es ,
+                       "This class is created to follow the products that have already completed the process and are in the warehouse, in order to keep track of them."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Download_Stop
+:Download_Stop rdf:type owl:Class ;
+               rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Incidence_Stop
+:Incidence_Stop rdf:type owl:Class ;
+                rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Load_Area
+:Load_Area rdf:type owl:Class ;
+           rdfs:subClassOf :Areas ;
+           rdfs:comment "Loading area for customers, intended for trucks to be positioned when loading. It is a limited area, for few vehicles at the same time. Trucks will have to wait outside to enter if they are fully occupied."@en ,
+                        "Área de carga para los clientes, destinada a que se posicionen los camiones al cargar. Zona muy limitada, para pocos vehículos a un mismo tiempo. Los camiones tendrán que esperar para entrar si esta ocupada al completo."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Logistics_Resources
+:Logistics_Resources rdf:type owl:Class ;
+                     rdfs:comment "Esta clase principal incluye todos los recursos que se emplean a lo largo del proceso. Se refiere a elementos fisicos que se emplean para completar los procesos."@es ,
+                                  "This main class includes all the resources that are used throughout the process. It makes reference to physical elements that are used to complete the processes."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Logistics_Services
+:Logistics_Services rdf:type owl:Class ;
+                    rdfs:comment "Esta clase principal abarca los elementos no físicos que forman parte del proceso, sino los servicios o fases que tienen lugar a lo largo del sistema y que forman el proceso."@es ,
+                                 "This main class covers the non-physical elements that are part of the process, like acts or phases that happens throughout the system."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Lunch_Stop
+:Lunch_Stop rdf:type owl:Class ;
+            rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Pick-up_Stop
+:Pick-up_Stop rdf:type owl:Class ;
+              rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Porters
+:Porters rdf:type owl:Class ;
+         rdfs:subClassOf :Supplier ;
+         rdfs:comment "Trabajadores encargados de cargar y descargar los productos para luego almacenarlos una vez los camiones han sido pesados. Se encargan además llevar el recuento de los materiales."@es ,
+                      "Workers that are in charge of loading and unloading the products and then storing them once the trucks have been weighed. They are also in charge of keeping count of the materials."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Product_Warehouse
+:Product_Warehouse rdf:type owl:Class ;
+                   rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> ;
+                   rdfs:comment "Destination set for each vehicle with the products they have collected on the routes, for the storage of the products until their subsequent recycling, reuse, incineration, etc."@en ,
+                                "Destino fijado para cada vehículo con los productos que se han recogido en las rutas, para el almacenamiento de los productos hasta su posterior reciclaje, reutilización, incineración, etc."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Real_Time_Location
+:Real_Time_Location rdf:type owl:Class ;
+                    rdfs:comment "It collects real time positions of entities as vehicles, products, etc., throughout the different activities such as transport, weighing... Thanks to tools such as the timestamp and  GPS systems, it will be possible to know where the product is in the process and the exact location of the vehicle"@en ,
+                                 "Recoge las posiciones en tiempo real de los vehículos, productos, etc., a lo largo de las diferentes actividades como el transporte, la pesada, etc. Gracias a herramientas, por ejemplo, como el timestamp, se podrá saber en que parte del proceso esta el producto, y con sistemas GPS la localización exacta del vehículo"@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Scale
+:Scale rdf:type owl:Class ;
+       rdfs:subClassOf :Logistics_Resources ;
+       rdfs:comment "Clase para las básculas que recogen los pesos de vehículos en las entradas y salidas de los locales de los clientes y los almacenes, para con la diferencia de pesos entre entrada y salida calcular y comprobar el peso del material."@es ,
+                    "Class for scales that collect vehicle weights at the entrances and exits of customer premises and warehouses, to calculate and check the weight of the material thanks to the difference  between entry and exit weights."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Scheduling
+:Scheduling rdf:type owl:Class ;
+            rdfs:subClassOf :Activities .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Stop
+:Stop rdf:type owl:Class ;
+      owl:equivalentClass <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+      rdfs:subClassOf :Activities .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Storage
+:Storage rdf:type owl:Class ;
+         rdfs:subClassOf :Activities .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Sup.Manager
+:Sup.Manager rdf:type owl:Class ;
+             rdfs:subClassOf :Supplier ;
+             rdfs:comment "People in charge of leading the process from the suppliers' position, leading the suppliers team and making decisions"@en ,
+                          "Personas encargadas de dirigir el proceso desde la posición de los proveedores, dirigiendo a los basculistas, mozos y conductores y tomando decisiones."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Sup.Weighing_Worker
+:Sup.Weighing_Worker rdf:type owl:Class ;
+                     rdfs:subClassOf :Supplier ;
+                     rdfs:comment "People that are in charge of weighing the product when the truck is going to unload it in the warehouse, weighing the truck when it is entering and leaving the warehouse to calculate the load difference."@en ,
+                                  "Personas encargadas de pesar el producto cuando el camión va a descargar en el almacén, pesando el camión al entrar y al salir para calcular la diferencia de carga."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Supplier
+:Supplier rdf:type owl:Class ;
+          rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents> ;
+          rdfs:comment "Person or entity that wants to get the product that the customer is sells and is in charge of the transport process to pick it up."@en ,
+                       "Persona o entidad que quiere hacerse con el producto que vende el cliente y se encarga del proceso de transporte que implica ir a recogerlo."@es .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf :Activities .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Vehicle_Garage
+:Vehicle_Garage rdf:type owl:Class ;
+                rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> ;
+                rdfs:comment "Lugar de partida de los vehículos donde se encuentran aparcados hasta que se les destina a una ruta."@es ,
+                             "Starting point of the route where the vehicles are parked until they are assigned to a route."@en .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#W_Scale_Entry
+:W_Scale_Entry rdf:type owl:Class ;
+               rdfs:subClassOf :Warehouse_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#W_Scale_Exit
+:W_Scale_Exit rdf:type owl:Class ;
+              rdfs:subClassOf :Warehouse_Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Warehouse_Scale
+:Warehouse_Scale rdf:type owl:Class ;
+                 rdfs:subClassOf :Scale .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Warehouse_Storage_Area
+:Warehouse_Storage_Area rdf:type owl:Class ;
+                        rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Warehouse_Weighing_Area
+:Warehouse_Weighing_Area rdf:type owl:Class ;
+                         rdfs:subClassOf :Weighing_Area .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Weighing
+:Weighing rdf:type owl:Class ;
+          rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Weighing_Area
+:Weighing_Area rdf:type owl:Class ;
+               rdfs:subClassOf :Areas ;
+               rdfs:comment "Area where trucks are weighed, when entering and leaving the palce to calculate the weight of the material that has been picked up"@en ,
+                            "Área donde se pesan los camiones, al entrar y al salir para calcular el peso del material."@es .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf :Logistics_Resources ;
+                                                                                             rdfs:comment "Logistics agents are individuals or legal entities created for commercial ventures. To model these entities, we consider how they participate in the  supply chains system."@en ,
+                                                                                                          "Los agentes de logística son individuos o actores corporativos, es decir, entidades legales creadas para emprendimientos comerciales. Para situarles en el modelo, consideramos la forma en que participan en las cadenas de suministro."@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Agents> ;
+                                                                                               rdfs:comment "Legal or natural person who ask for the service"@en ,
+                                                                                                            "Persona juridica o fisica que hace el encargo"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf :Areas ;
+                                                                                                    rdfs:comment "Warehouse dowloading area, where the trucks are positioned when downloading the material. Limited area, for a few vehicules at the same time. Trucks will have to wait outside to enter if it is fully occupied."@en ,
+                                                                                                                 "Área de descarga de los almacenes, destinada a que se posicionen los camiones al descragar. Zona muy limitada, para pocos vehiculos a un mismo tiempo. Los camiones tendran que esperar para entrar si esta ocupada al completo"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Driver
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Driver> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf :Supplier ;
+                                                                                             rdfs:comment "Trabajadores que conducen los vehiculos y cumplen con las rutas establecidas."@es ,
+                                                                                                          "Workers who drive the vehicles and fulfill with the established routes."@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#HydraulicCrane
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#HydraulicCrane> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#JibCrane
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#JibCrane> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#OctopusCrane
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#OctopusCrane> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :Logistics_Resources ;
+                                                                                              rdfs:comment """Materiales que se van a recoger. Son materiales metálicos, de distintas dimensiones y pesos.
+Los materiales se recogen con el objetivo de darles un tratamiento posterior: reciclaje, reutilizacion, eliminación..."""@es ,
+                                                                                                           "Materials to be collected. They are metallic materials with different dimensions and weights."@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf :Logistics_Services ;
+                                                                                               rdfs:comment "Secciones que componen la ruta separadas por las distintas paradas (puntos de recogida)"@es ,
+                                                                                                            "Segements that make up the route, they are separated by the different stops (pick up points)"@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Sidelifter
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Sidelifter> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf :Logistics_Services ;
+                                                                                                          rdfs:comment "Paradas en las diferentes rutas, corresponden con los puntos de recogida de los productos, en los locales de los clientes."@es ,
+                                                                                                                       "Stops on the different routes. They are the pick up points of the products,  the clients' adresses."@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Storage_Area> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf :Areas ;
+                                                                                                   rdfs:comment "Materials storage area, where the products are stored until further processing. Limited area but with large capacity"@en ,
+                                                                                                                "Área de almacenamiento de los materiales, donde se guardan hasta su posterior proceso. Zona limitada pero con gran capacidad"@es .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#TelescopicCrane
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#TelescopicCrane> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf :Logistics_Services ,
+                                                                                                                 [ owl:intersectionOf ( <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Segments>
+                                                                                                                                        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment>
+                                                                                                                                      ) ;
+                                                                                                                   rdf:type owl:Class
+                                                                                                                 ] ;
+                                                                                                 rdfs:comment """Recorridos (rutas) que van a seguir los diferentes vehiculos, desde el lugar del que parten, pasando por los distintos clientes incluidos en su recorrido hasta el lugar de almacenamiento final y volviendo al garaje de los vehiculos.
+ Para la determinación de las rutas habrá que tener en cuenta el trafico en tiempo real, y los kilómetros y duración de la misma para seleccionar los vehículos asignados a cada una de ellas. Las rutas tendrán diferentes paradas."""@es ,
+                                                                                                              """Routes that the different vehicles have to follow,  beginning in the place where the vehicules are parked passing through the different clients included in their route to the final storage location and returning to the vehicle garage.
+When deciding the routes it will be necessary to take into account the real time traffic. The routes will have different stops."""@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Box
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Box> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Crane> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Hopper
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Hopper> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Platform
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Platform> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Tipper_Bus
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Tipper_Bus> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Van
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Van> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Vehicle> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf :Logistics_Resources ;
+                                                                                              rdfs:comment """Clase que recoge los diferentes tipos de vehiculos que forman la flota.
+Los vehículos son de distintos tipos, dimensiones y capacidades de carga para adaptarse a las distintas dimensiones y características de los productos. Según esto se asignará uno u otro a cada encargo."""@es ,
+                                                                                                           """Class that includes the different types of vehicles the fleet is composed by.
+Vehicles are of different types, dimensions and load capacities, in order to adapt to the different dimensions and characteristics of the products. According to that, one or another will be assigned to each assignment."""@en .
+
+
+###  https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses
+<https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf :Logistics_Resources ;
+                                                                                                 rdfs:comment "Almacenes de productos o de vehiculos"@es ,
+                                                                                                              "Warehouses of products or vehicles"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Almacen1
+:Almacen1 rdf:type owl:NamedIndividual ,
+                   :Product_Warehouse ;
+          <http://www.ontologydesignpatterns.org/cp/owl/place.owl#is_located_in> :PlaceX ;
+          :has_opening_hours :TimeAlmacén1 ;
+          :is_destination_of :Route1 ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Store> :Product1 ;
+          :Occupation_Level "20%" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Warehouse> "Alcorcón" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Capac_Warehouse> "1000.0"^^xsd:float .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Camion1
+:Camion1 rdf:type owl:NamedIndividual ,
+                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Van> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Cliente1
+:Cliente1 rdf:type owl:NamedIndividual ,
+                   :Cust.Manager ;
+          :has_time_slot :TimeCliente1 ;
+          :is_included :Route1 ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Owns> :Product1 ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Adress_Customer> "Madrid" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Customer> "01" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Name> "Juan" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Driver1
+:Driver1 rdf:type owl:NamedIndividual ,
+                  <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Driver> ;
+         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driver_of> :Camion1 ;
+         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Experience> "High" ;
+         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#ID_Supplier> "020" ;
+         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Name> "Pedro" ;
+         <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#State> "Busy" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Garage1
+:Garage1 rdf:type owl:NamedIndividual ,
+                  :Vehicle_Garage ;
+         :is_ended_point_of :Route1 ;
+         :is_started_point_of :Route1 ;
+         :is_the_park_of :Camion1 .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#PlaceX
+:PlaceX rdf:type owl:NamedIndividual ,
+                 <http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place> .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Product1
+:Product1 rdf:type owl:NamedIndividual ,
+                   <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Product> ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Belongs_to> :Cliente1 ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_stored_by> :Almacen1 ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_transported_by> :Camion1 ;
+          :Nature_of_material "Acero inoxidable" ;
+          :Quality_Level_of_Material "High" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Dimension> "2 metros de ancho, 3 de largo y 1 de alto" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier> "A1111" ;
+          <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Load> "10kg" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Route1
+:Route1 rdf:type owl:NamedIndividual ,
+                 <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory> ;
+        :has :Stop1 ,
+             :Stop2 ,
+             :Stop3 ;
+        :has_end_point_in :Garage1 ;
+        :has_start_point_in :Garage1 ;
+        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Length> "50km" ;
+        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Path_Stops> 3 ;
+        <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Traffic> "Low" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Scale1
+:Scale1 rdf:type owl:NamedIndividual ,
+                 :Scale ;
+        :weighs :Product1 .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Stop1
+:Stop1 rdf:type owl:NamedIndividual ,
+                :Stop ;
+       :happen_in :Route1 ;
+       :last :TimeStop1 .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Stop2
+:Stop2 rdf:type owl:NamedIndividual ,
+                <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+       :happen_in :Route1 ;
+       :last :TimeStop2 .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Stop3
+:Stop3 rdf:type owl:NamedIndividual ,
+                <https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Stops_Inter-segment> ;
+       :happen_in :Route1 ;
+       :last :TimeStop3 .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TimeAlmacén1
+:TimeAlmacén1 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+              <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> "20:00" ;
+              <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> "9:00" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TimeCliente1
+:TimeCliente1 rdf:type owl:NamedIndividual ,
+                       <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+              <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> "14:00" ;
+              <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> "10:00" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TimeStop1
+:TimeStop1 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> "11:00" ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> "10:45" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TimeStop2
+:TimeStop2 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> "" ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> "12:20" .
+
+
+###  http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TimeStop3
+:TimeStop3 rdf:type owl:NamedIndividual ,
+                    <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#TimeInterval> ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalEndDate> "17:00" ;
+           <http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#hasIntervalStartDate> "16:00" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Break_Stop
+                :Download_Stop
+                :Incidence_Stop
+                :Lunch_Stop
+                :Pick-up_Stop
+                :Weighing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Scheduling
+                :Stop
+                :Storage
+                :Transport
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

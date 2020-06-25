@@ -50,6 +50,10 @@
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#End_Point",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Orderly_list_of_segments" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Orderly_list_of_segments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Activities" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Activities"
     },
@@ -67,13 +71,8 @@
     "Truck_Box" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Box"
     },
-    "are_opened_hours" : {
-      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#are_opened_hours",
-      "@type" : "@id"
-    },
-    "Is_driven_by" : {
-      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driven_by",
-      "@type" : "@id"
+    "Longitude" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Longitude"
     },
     "Trajectory" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Trajectory"
@@ -114,6 +113,9 @@
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#work_in",
       "@type" : "@id"
     },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
     "expiration_date_of" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#is_order/expiration_date_of",
       "@type" : "@id"
@@ -147,6 +149,10 @@
     "OctopusCrane" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#OctopusCrane"
     },
+    "Orderly_list_of_customers" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Orderly_list_of_customers",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Parameters" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Parameters"
     },
@@ -159,10 +165,6 @@
     },
     "Customer" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Customer"
-    },
-    "Belongs_to" : {
-      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Belongs_to",
-      "@type" : "@id"
     },
     "extractedFrom" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#extractedFrom"
@@ -214,8 +216,16 @@
       "@id" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#is_located_in",
       "@type" : "@id"
     },
+    "Segments_Positions" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Segments_Positions",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Scale" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Scale"
+    },
+    "is_route_of" : {
+      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#is_route_of",
+      "@type" : "@id"
     },
     "Sidelifter" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Sidelifter"
@@ -270,6 +280,9 @@
     "Load_Area" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Load_Area"
     },
+    "Adress" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Adress"
+    },
     "Download_Stop" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Download_Stop"
     },
@@ -306,6 +319,10 @@
     },
     "State_Supp" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#State_Supp"
+    },
+    "Segments_Times" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Segments_Times",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Dim.Product" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Dim.Product"
@@ -345,8 +362,8 @@
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Traffic",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "Its_route_is" : {
-      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Its_route_is",
+    "its_route_is" : {
+      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#its_route_is",
       "@type" : "@id"
     },
     "Areas" : {
@@ -379,6 +396,10 @@
     },
     "scenarios" : {
       "@id" : "http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#scenarios"
+    },
+    "are_opening_hours_of" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#are_opening_hours_of",
+      "@type" : "@id"
     },
     "Place" : {
       "@id" : "http://www.ontologydesignpatterns.org/cp/owl/place.owl#Place"
@@ -422,6 +443,9 @@
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Experience",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Latitude" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Latitude"
+    },
     "has_order_and_expiration_date" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#has_order_and_expiration_date",
       "@type" : "@id"
@@ -430,12 +454,16 @@
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#last",
       "@type" : "@id"
     },
-    "Is_route_of" : {
-      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_route_of",
-      "@type" : "@id"
+    "Destination_Point" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Destination_Point",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Warehouses" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Warehouses"
+    },
+    "ID_Stop" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#ID_Stop",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Truck_Hopper" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Truck_Hopper"
@@ -479,6 +507,14 @@
     },
     "State" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#State",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "is_driven_by" : {
+      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#is_driven_by",
+      "@type" : "@id"
+    },
+    "TrajectoryDef" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#TrajectoryDef",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Cust.Weighing_Worker" : {
@@ -530,9 +566,9 @@
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#has_end_point_in",
       "@type" : "@id"
     },
-    "is_duration__of" : {
-      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#is_duration__of",
-      "@type" : "@id"
+    "ID_Activity" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#ID_Activity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Sup.Manager" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Sup.Manager"
@@ -551,6 +587,13 @@
     "Customer_Storage_Area" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#Customer_Storage_Area"
     },
+    "is_duration_of" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#is_duration_of",
+      "@type" : "@id"
+    },
+    "ID_Segment" : {
+      "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place.owl#ID_Segment"
+    },
     "Fuel" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Fuel",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -561,16 +604,16 @@
     "Download_Area" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Download_Area"
     },
-    "Is_driver_of" : {
-      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Is_driver_of",
-      "@type" : "@id"
-    },
     "Identifier" : {
       "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#Identifier",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "entityPositionY" : {
       "@id" : "http://ontologydesignpatterns.org/opla-sd#entityPositionY"
+    },
+    "belongs_to" : {
+      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#belongs_to",
+      "@type" : "@id"
     },
     "is_started_point_of" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#is_started_point_of",
@@ -583,6 +626,10 @@
     "ID_Download" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#ID_Download",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "is_driver_of" : {
+      "@id" : "https://apiict01.etsii.upm.es/mediawiki/index.php/User:PatriciaPoveda/ontologia.owl#is_driver_of",
+      "@type" : "@id"
     },
     "Stop" : {
       "@id" : "http://www.semanticweb.org/patriciapoveda/ontologies/2020/4/ontology-place#Stop"
